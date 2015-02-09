@@ -1,0 +1,1 @@
+Blocmarks is a simple clone of an earlier version of Digg.com!
