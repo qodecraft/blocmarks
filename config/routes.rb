@@ -1,5 +1,12 @@
-Rails.application.routes.draw do
+Rails.application.routes.draw do  
   devise_for :users
+  
+  resources :topics do
+    resources :bookmarks, only: [:create, :destroy]
+  end
+  
+  
+  
   root to: 'welcome#index'
 
   get 'about' => 'welcome#about'

@@ -1,0 +1,10 @@
+<h1>Edit topic</h1>
+<div class="col-md-6">
+  <%= form_for @topic do |f| %>
+    <div class="form-group">
+      <%= f.text_field :name, placeholder: "Enter topic name", class: 'form-control' %>
+    </div>
+  
+      <%= f.submit "save", class: 'btn btn-success' %>
+  <% end %>
+</div>

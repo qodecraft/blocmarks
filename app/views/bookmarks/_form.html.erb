@@ -1,0 +1,9 @@
+<div class="bookmark-form">
+  <%= form_for [@topic, @topic.bookmarks.new] do |f| %>
+ 
+  <%= f.text_field :link, placeholder: "Enter URL here", class: 'form-control' %>
+
+  <%= f.submit "Add", class: 'btn btn-success' %>
+  <% end %>
+</div>
+
